@@ -1,13 +1,9 @@
-import React, { FC } from 'react';
-import type {PropsWithChildren} from 'react';
-import {Image, StyleSheet, Text, View, Dimensions, ImageBackground, TouchableOpacity} from 'react-native';
+import {Image, StyleSheet, Text, View, Dimensions, ImageBackground} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { LoginForm } from '../components/forms/LoginForm';
 import { RegisterForm } from '../components/forms/RegisterForm';
-import { EntryContainer } from '../components/containers/EntryContainer';
 import { WideButton } from '../components/buttons/WideButton';
 import Animated, { useSharedValue, withSpring, useAnimatedStyle } from 'react-native-reanimated'
-import Svg, { Defs, Stop, Path }from 'react-native-svg';
 
 function GreetingPage(): JSX.Element {
 
@@ -55,13 +51,6 @@ function GreetingPage(): JSX.Element {
         style={{height: '100%', justifyContent: 'space-around', opacity: 0.6}}
       />
 
-    
-     
-     
-    
-
-      
-
       <View style={{position: 'absolute', top: 100, width: '100%', alignItems: 'center'}}>
         <Image source={require('./assets/logo1.png')} style={{ width: '45%', height: 235}} />
          
@@ -94,8 +83,7 @@ function GreetingPage(): JSX.Element {
         <RegisterForm toLogin={toLoginForm}/>
       </Animated.View> 
 
-  
-
+ 
     </ImageBackground>
   );
 }
