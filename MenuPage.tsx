@@ -1,16 +1,6 @@
-import React, { FC, useState, useEffect } from 'react';
-import type {PropsWithChildren} from 'react';
-import {Image, StyleSheet, Text, View, Dimensions, ImageBackground, TouchableOpacity} from 'react-native';
+import { FC } from 'react';
+import {Image, StyleSheet, Text, View,TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import { LoginForm } from '../components/forms/LoginForm';
-import { RegisterForm } from '../components/forms/RegisterForm';
-import { EntryContainer } from '../components/containers/EntryContainer';
-import { WideButton } from '../components/buttons/WideButton';
-import Animated, { useSharedValue, withSpring, useAnimatedStyle, onChange } from 'react-native-reanimated'
-import Svg, { Defs, Stop, Path }from 'react-native-svg';
-import { HatSVGContainer } from '../components/containers/HatSVGContainter';
-import { WidePassInput } from '../components/inputforms/WidePassInput';
-import AnimatedLottieView from 'lottie-react-native';
 import { DropProfile } from '../components/dropdown/DropProfile';
 
 
